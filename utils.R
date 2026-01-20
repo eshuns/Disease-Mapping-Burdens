@@ -21,7 +21,7 @@ clean_county <- function(x) {
 }
 
 # -----------------------------
-# 2) Load NC counties shapefile (shared)
+# 2) NC counties shapefile (shared)
 # -----------------------------
 get_nc_counties <- function(year = 2024, cb = TRUE) {
   tigris::counties(state = "NC", cb = cb, year = year, class = "sf") %>%
